@@ -1,0 +1,70 @@
+
+.contenedor,.contenido{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.contenido{
+    flex-direction: column;
+    margin: 10px;
+    background:linear-gradient( to right,#FDF6EC, #EBD4D2);
+}
+.foto{
+    width: 200px;
+    margin-top: 60px;
+    border-radius: 100%;
+    border: solid 5px #E0E0E0;
+
+}
+aside p img{
+    width: 60px;
+    margin-top: 60px;
+    margin-left: 20px;
+    border-radius: 100%;
+}
+.contenedor aside{
+    background-color:#D8C3A5
+}
+@font-face{
+    font-family: "Miligant";
+    src: url("../fonts/Miligant-Regular.otf");
+}
+h1{ 
+    color: #4A5759;
+    font-family: "Miligant",sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    font-family: "Miligant",sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    
+}
+h3{
+    font-family: "Miligant",sans-serif;
+    font-size: 30px;
+    color: #2C3E50; 
+    text-align: center;
+}
+.contenido h3{
+    background: color #000;
+    border-radius: 50px;
+}
+aside p{
+    color: #000;
+    text-align: center;
+}
+footer{
+    background-color: #D8C3A5;
+    text-align: center;
+}
+footer .telefono::before{
+    content:"📞";
+
+}
+.perfil p{
+    text-align: justify;
+}
