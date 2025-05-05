@@ -1,5 +1,7 @@
-body{
+body,:root{
+    text-align: center;
     height: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: antiquewhite;
@@ -10,18 +12,18 @@ body{
     height:calc(100vh-80px);
 }
 .fila1{
-    background-color: #8E735B;
+    background-color:#ccccff; 
     flex-basis: 80%;
     padding:5px;
-    border: 2px solid #481919;
+    border: 2px solid #310931;
     border-right: 2px solid #ffffff;
 }
 .fila2{
     padding: 20px;
     height: 50%;
-    background:linear-gradient(to right, #D8C3A5, #E0E0E0);
+    background:linear-gradient(to left, #cf99ff,#ffffff);
 }
-.pie{
+.contacto{
     width: 100%;
     height: 20%;
 }
@@ -41,7 +43,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-aside img{
+.informacion img{
     width: 40px;
     border-radius: 40%;
     vertical-align: middle;
@@ -55,71 +57,67 @@ aside img{
     src: url("../fonts/CaviarDreams.ttf");
 }
 h1{ 
-    color: #4A5759;
+    color: #02023a;
     font-family: "Miligant",sans-serif;
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
 }
 h2{
     font-family: "Miligant",sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 10px;
     text-align: center;
+    border:1px solid #000 ;
+    border-radius: 15px;
     
 }
 h3{
     font-family: "Miligant",sans-serif;
-    font-size: 40px;
-    color: #2C3E50;
+    font-size: 2.5rem;
+    color: #02023a;
     text-align: center;
+    border-top:1px solid #000
 }
 aside h3{
-    font-size: 30px;
+    font-size: 2rem;
 }
 .perfil,.estudio,.trabajo,.tecnicas,.blandas,.telefono,.correo,.fila1{
     font-family: "caviar dreams";
 }
 .contenido h3{
     background: color #000;
-    border-radius: 50px;
+    border-radius: 100px;
 }
-.informacion{
-    line-height: 15px;
+.informacion,.redes{
     text-align: center;
 }
-footer{
-    border-top: solid 2px#ffffff;
-    height: 80px;
-    background-color: #D8C3A5;
+.informacion p{
+    font-family: "caviar dreams";
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 0;
 }
-.pie .telefono::before{
-    content:"📞";
-
-}
-.pie .correo::before{
-    content: "📧";
+.redes p{
+    font-family: "caviar dreams";
+    text-align: center;
 }
 .perfil p{
     text-align: justify;
 }
-header h2{
-    font-size: 25px;
+.estudio ul{
+    text-align: justify;
 }
-.idioma::before{
-    content: "🗣️";
-    font-size:20px;
+.trabajo ul{
+    text-align: justify;
 }
-.redes::before{
-    content: "🌐";
-    font-size: 20px;
+.tecnicas ul{
+    text-align: justify;
 }
-.tec::before{
-    content:"⚒️";
+.contacto {
+    text-align: left;
 }
-.blan::before{
-    content:"🧠"
+.correo [href]{
+    color: #cf19ff;
+}
+.enlace [href]{
+    color:#cf19ff;
 }
