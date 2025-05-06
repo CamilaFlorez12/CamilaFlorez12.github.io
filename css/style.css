@@ -9,23 +9,21 @@ body,:root{
 .contenedor{
     display: flex;
     width: 100%;
-    height:calc(100vh-80px);
 }
 .fila1{
+    display:block;
+    width: 50%;
     background-color:#ccccff; 
-    flex-basis: 80%;
     padding:5px;
     border: 2px solid #310931;
     border-right: 2px solid #ffffff;
 }
 .fila2{
+    display: block;
+    width: 50%;
     padding: 20px;
     height: 50%;
     background:linear-gradient(to left, #cf99ff,#ffffff);
-}
-.contacto{
-    width: 100%;
-    height: 20%;
 }
 .contenedor aside{
     display: flex;
@@ -85,7 +83,7 @@ aside h3{
     font-family: "caviar dreams";
 }
 .contenido h3{
-    background: color #000;
+    background-color: #000;
     border-radius: 100px;
 }
 .informacion,.redes{
@@ -94,7 +92,7 @@ aside h3{
 .informacion p{
     font-family: "caviar dreams";
     text-align: center;
-    line-height: 0;
+    line-height:1.2;
 }
 .redes p{
     font-family: "caviar dreams";
@@ -113,6 +111,8 @@ aside h3{
     text-align: justify;
 }
 .contacto {
+    width: 100%;
+    padding: 10px;
     text-align: left;
 }
 .correo [href]{
