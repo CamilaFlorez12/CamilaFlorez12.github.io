@@ -16,8 +16,9 @@
     }
     }
 }
-@media (min-width:768px){
-    .flex-container{
-        flex-direction: row;
+@media (max-width:800px){
+    .contenedor{
+        display: grid;
+        
     }
 }
