@@ -1,0 +1,23 @@
+@font-face{
+    font-family: "Miligant";
+    src: url("../fonts/The\ Heart\ of\ Everything\ Demo.ttf");
+}
+@font-face{
+    font-family: "caviar dreams";
+    src: url("../fonts/CaviarDreams.ttf");
+}
+@keyframes mover {
+    from{
+        opacity: 0;
+        transform: translateY(-22px);
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+}
+@media (min-width:768px){
+    .flex-container{
+        flex-direction: row;
+    }
+}

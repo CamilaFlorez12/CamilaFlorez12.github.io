@@ -1,28 +1,33 @@
-body,:root{
-    text-align: center;
-    height: 100%;
-    width: 100vw;
+*{
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    box-sizing: border-box;
+} 
+body{
+    display: flex;
+    min-height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f9;
 }
+
 .contenedor{
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: center;
 }
 .fila1{
     display:block;
-    width: 50%;
+    max-width: 30%;
     background-color:#ccccff; 
     padding:5px;
-    border: 2px solid #310931;
-    border-right: 2px solid #ffffff;
 }
 .fila2{
     display: block;
-    width: 50%;
+    max-width: 70%;
     padding: 20px;
-    height: 50%;
     background:linear-gradient(to left, #cf99ff,#ffffff);
 }
 .contenedor aside{
@@ -33,26 +38,20 @@ body,:root{
     padding-top: 20px;
 }
 .foto{
-    width: 200px;
+    max-width: 200px;
     margin-top: 60px;
     border-radius: 100%;
     border: solid 5px #E0E0E0;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    vertical-align: center;
+    animation: mover 2s;
 }
 .informacion img{
     width: 40px;
     border-radius: 40%;
     vertical-align: middle;
-}
-@font-face{
-    font-family: "Miligant";
-    src: url("../fonts/The\ Heart\ of\ Everything\ Demo.ttf");
-}
-@font-face{
-    font-family: "caviar dreams";
-    src: url("../fonts/CaviarDreams.ttf");
 }
 h1{ 
     color: #02023a;
@@ -66,6 +65,7 @@ h2{
     margin: 10px;
     text-align: center;
     border:1px solid #000 ;
+    padding-top: 5px;
     border-radius: 15px;
     
 }
@@ -74,7 +74,36 @@ h3{
     font-size: 2.5rem;
     color: #02023a;
     text-align: center;
-    border-top:1px solid #000
+    border-top:1px solid #000;
+    padding-top: 15px;
+    margin: 30px;
+}
+ul{
+    text-align: justify;
+    margin:0 100px;
+}
+p{
+    text-align: justify;
+    margin:0 100px;
+}
+.barra{
+    margin: 10px 0;
+    background-color: #fff;
+    width: 100%;
+    height: 20px;
+}
+.porcentaje{
+    background-color: #cf99ff;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: row;
+}
+.contacto p{
+    margin: 0 2px;
+    font-size: 13px;
 }
 aside h3{
     font-size: 2rem;
@@ -107,17 +136,23 @@ aside h3{
 .trabajo ul{
     text-align: justify;
 }
-.tecnicas ul{
+.tecnicas ul {
     text-align: justify;
+    margin: 0 200px;
 }
 .contacto {
     width: 100%;
     padding: 10px;
     text-align: left;
 }
-.correo [href]{
-    color: #cf19ff;
+.contacto p{
+    text-align: center;
 }
-.enlace [href]{
+.correo [href]:hover{
+    color: #cf19ff;
+    font-size: 15px;
+}
+.enlace [href]:hover{
     color:#cf19ff;
+    font-size: 20px;
 }
