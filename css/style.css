@@ -15,23 +15,38 @@ body{
 
 .contenedor{
     display: grid;
-    grid-template-columns: auto 1fr;
-    
-    margin: 50px;
-    justify-content: center;
+    grid-template-columns:1fr;
+    grid-template-rows: 2fr 3fr 3fr 1fr;
+    grid-template-areas: ".navegador .navegador"
+                        ".parte1 .parte1"
+                        ".parte2 .parte2";
+    padding: 50px;
 }
-nav
-.fila1{
-    display:block;
-    max-width: 30%;
-    background-color:#ccccff; 
-    padding:5px;
+.navegador{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: #cf19ff;
+    height: 8vw;
 }
-.fila2{
-    display: block;
+.parte1{
+    display:grid;
+    grid-column: 1;
+    grid-template-columns:2fr 1fr;
+}
+.parte2{
+    display: grid;
+    grid-template-rows:repeat(2,1fr);
     max-width: 70%;
     padding: 20px;
     background:linear-gradient(to left, #cf99ff,#ffffff);
+}
+.parte3{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.parte4{
+    display: grid;
+    grid-template-rows:repeat(2,1fr)
 }
 .contenedor aside{
     display: flex;
@@ -42,10 +57,8 @@ nav
 }
 .foto{
     max-width: 200px;
-    margin-top: 60px;
     border-radius: 100%;
     border: solid 5px #E0E0E0;
-    display: inline-block;
     justify-content: center;
     align-items: center;
     vertical-align: center;
