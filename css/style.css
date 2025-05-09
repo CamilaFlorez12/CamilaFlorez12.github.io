@@ -8,77 +8,147 @@ body{
     grid-template-columns:auto 1fr;
     min-height: 100vh;
     max-width: 100vw;
-    margin: 0;
+    margin:0;
     padding: 0;
-    background-color: #fff0f9;
 }
-
 .contenedor{
     display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: 2fr 3fr 3fr 1fr;
-    grid-template-areas: ".navegador .navegador"
-                        ".parte1 .parte1"
-                        ".parte2 .parte2";
-    padding: 50px;
+grid-template-columns:1fr;
+grid-template-rows: auto auto auto auto auto auto;
+grid-template-areas: "navegador"
+                    "parte1 "
+                    "parte2"
+                    "parte3"
+                    "parte4"
+                    "footer";
+padding: 10vw;
+background:linear-gradient(to left, #cf99ff,#ffffff)
 }
-.navegador{
+
+.navegador {
+    margin: 1vw;
+    grid-area: navegador;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     background-color: #cf19ff;
-    height: 8vw;
+    height: 7.5vw;
+    width: 100%;
+    text-align: center ;
+    align-items: center;
+}
+.navegador p{
+    margin: 2vw;
+    padding: 0;
+    margin-left: 6.5vw;
+    font-size: 1rem;
+}
+.navegador a{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 .parte1{
-    display:grid;
-    grid-column: 1;
-    grid-template-columns:2fr 1fr;
+    grid-area: parte1;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding:2rem
 }
 .parte2{
+    grid-area: parte2;
     display: grid;
-    grid-template-rows:repeat(2,1fr);
-    max-width: 70%;
-    padding: 20px;
-    background:linear-gradient(to left, #cf99ff,#ffffff);
+    grid-template-rows:1fr ;
+    grid-template-areas: "estudio"
+                        "proyectos";
+    max-width:100%;
+    padding: 1rem;
+
 }
 .parte3{
+    grid-area: parte3;
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:1fr 1fr;
+    gap: 2vw;
+    padding: 2rem;
+    font-family: "apple";
+    font-size: 1.5rem;
+    border: 2px solid #000;
 }
 .parte4{
-    display: grid;
-    grid-template-rows:repeat(2,1fr)
+    grid-area: parte4;
+    border-bottom: 2px solid #000;
 }
-.contenedor aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-top: 20px;
-}
+
 .foto{
-    max-width: 200px;
+    max-width: 50%;
     border-radius: 100%;
     border: solid 5px #E0E0E0;
-    justify-content: center;
-    align-items: center;
-    vertical-align: center;
+    display: block;
+    margin:auto;
     animation: mover 2s;
 }
-.informacion img{
-    width: 40px;
-    border-radius: 40%;
-    vertical-align: middle;
+
+.fotogrado{
+    max-width:60%;
+    display: block;
+    justify-content: center;
+} 
+.enlace img{
+    width: 6vw;
 }
-h1{ 
-    color: #02023a;
-    font-family: "Miligant",sans-serif;
-    font-size: 3rem;
+.enlace{
+    vertical-align: center;
+}
+#perfil{
+    border-left: 2px solid #000;
+    font-family: "apple";
+    font-size: 3vw;
+}
+#estudio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+#proyectos li{
+    font-family: "apple";
+    font-size: 1.2rem;
+    line-height: 60px;
+}
+#contacto p{
+    text-align: center;
+    font-family: "apple";
+    font-size: 2vw;
+}
+
+.formacion ul{
+    font-family: "apple";
+    font-size: 3vw;
+    margin: auto;
+    text-align: justify;
+}
+#idiomas p{
+    font-family: "apple";
+    font-size: 2vw;
     text-align: center;
 }
-h2{
-    font-family: "Miligant",sans-serif;
+
+
+h1{ 
+    color: #02023a;
+    font-family: "Marlos";
     font-size: 1.5rem;
-    margin: 10px;
+    text-align: center;
+    line-height: 6vw;
+}
+h2{
+    font-family: "Marlos";
+    font-size: 1rem;
+    margin: 1vw;
     text-align: center;
     border:1px solid #000 ;
     padding-top: 5px;
@@ -86,89 +156,86 @@ h2{
     
 }
 h3{
-    font-family: "Miligant",sans-serif;
+    font-family: "Marlos";
     font-size: 2.5rem;
     color: #02023a;
     text-align: center;
-    border-top:1px solid #000;
-    padding-top: 15px;
-    margin: 30px;
+    padding-top: 1vw;
+    margin: 3vw;
 }
 ul{
     text-align: justify;
-    margin:0 100px;
+    margin:0 10vw;
 }
 p{
     text-align: justify;
-    margin:0 100px;
+    margin: 2vw;
 }
 .barra{
-    margin: 10px 0;
+    position: relative;
+    margin: 10vw 0;
     background-color: #fff;
-    width: 100%;
+    width: 60%;
+    max-width: 600px;
     height: 20px;
+    margin:20px auto;
+    border-radius: 10px;
 }
 .porcentaje{
     background-color: #cf99ff;
-    width: 25%;
+    width: 30%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    flex-direction: row;
+    border-radius: 10px;
 }
-.contacto p{
-    margin: 0 2px;
-    font-size: 13px;
-}
-aside h3{
-    font-size: 2rem;
-}
-.perfil,.estudio,.trabajo,.tecnicas,.blandas,.telefono,.correo,.fila1{
-    font-family: "caviar dreams";
-}
-.contenido h3{
-    background-color: #000;
-    border-radius: 100px;
-}
-.informacion,.redes{
-    text-align: center;
-}
-.informacion p{
-    font-family: "caviar dreams";
-    text-align: center;
-    line-height:1.2;
-}
-.redes p{
-    font-family: "caviar dreams";
-    text-align: center;
-}
-.perfil p{
-    text-align: justify;
-}
-.estudio ul{
-    text-align: justify;
-}
-.trabajo ul{
-    text-align: justify;
-}
-.tecnicas ul {
-    text-align: justify;
-    margin: 0 200px;
-}
-.contacto {
+.porcentaje2{
+    background-color: #cf99ff;
     width: 100%;
-    padding: 10px;
-    text-align: left;
-}
-.contacto p{
-    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 10px;
 }
 .correo [href]:hover{
     color: #cf19ff;
-    font-size: 15px;
+    font-size: 2.5vw;
 }
 .enlace [href]:hover{
     color:#cf19ff;
-    font-size: 20px;
+    font-size: 2.5vw;
 }
+#proyectos a:hover{
+    color:#cf19ff;
+    font-size: 2.5vw;
+}
+@media (max-width:800px){
+    .parte1{
+      flex-direction: row;
+      justify-content: center; 
+
+    }
+    p{
+        margin: 4vw 10vw;
+    }
+    .foto{
+        margin: auto;
+        display: block;
+    }
+}
+@media(min-width:1200px){
+    .contenedor{
+        display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas: "navegador navegador"
+                        "parte1 parte1 "
+                        "parte2 parte2"
+                        "parte3 parte3"
+                        "parte4 parte4"
+                        "footer footer";
+    }
+} 

@@ -1,10 +1,10 @@
 @font-face{
-    font-family: "Miligant";
-    src: url("../fonts/The\ Heart\ of\ Everything\ Demo.ttf");
+    font-family: "Marlos";
+    src: url("../fonts/Marlos.otf");
 }
 @font-face{
-    font-family: "caviar dreams";
-    src: url("../fonts/CaviarDreams.ttf");
+    font-family: "apple";
+    src: url("../fonts/AppleGaramond.ttf");
 }
 @keyframes mover {
     from{
@@ -14,11 +14,5 @@
         opacity: 1;
         transform: translateY(0);
     }
-    }
-}
-@media (max-width:800px){
-    .contenedor{
-        display: grid;
-        
     }
 }
